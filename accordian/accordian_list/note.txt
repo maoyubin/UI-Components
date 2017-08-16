@@ -1,0 +1,2 @@
+use overflow: hidden;  to operate dimension,
+Trick  self create arrow
