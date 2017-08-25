@@ -1,0 +1,65 @@
+html{
+  box-sizing: border-box;
+}
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+  margin:0;
+  padding:0;
+}
+
+html,body {
+  margin:0;
+  padding:0;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+}
+
+.mask {
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  top: 49%;
+  left: 30%;
+  background: rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 0px 99999px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+
+.mask > div.corner {
+    border-color: rgb(0, 255, 255);
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+}
+
+.top {
+    top: 0px;
+    border-top-style: solid;
+}
+
+.bottom {
+    bottom: 0px;
+    border-bottom-style: solid;
+}
+
+.left {
+    left: 0px;
+    border-left-style: solid;
+}
+
+.left.middle, .right.middle {
+    top: 90px;
+}
+
+.top.middle, .bottom.middle {
+    left: 140px;
+}
+
+.right {
+    right: 0px;
+    border-right-style: solid;
+}
