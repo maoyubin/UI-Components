@@ -402,6 +402,16 @@ $mq-width: 480px !default;
   box-shadow: inset 0 0 0 2px $menu-theme-color;
 }
 
+.c-circle-menu__icon {
+  fill: white;
+  width: 1.7rem;
+  height: 1.7rem;
+  @include mq {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+}
+
 /* -----------------------------------------------------------------------------
 
   The Toggle Component
@@ -553,15 +563,4 @@ $mq-width: 480px !default;
 .c-circle-menu__mask.is-active {
   opacity: 1;
   visibility: visible;
-}
-
-
-.c-circle-menu__icon {
-  fill: white;
-  width: 1.7rem;
-  height: 1.7rem;
-  @include mq {
-    width: 3.5rem;
-    height: 3.5rem;
-  }
 }
