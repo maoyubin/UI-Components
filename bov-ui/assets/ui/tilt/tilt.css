@@ -1,0 +1,196 @@
+/**
+ * *TILT HOVER
+ */
+
+/* Default */
+.tilt {
+  position: relative;
+  height: 450px;
+  width: 300px;
+}
+
+.tilt-container {
+  position: relative;
+  height: inherit;
+  width: inherit;
+}
+
+.tilt-grid {
+  margin-right: -4px;
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 150px;
+  z-index: 3;
+  opacity: 0.5;
+}
+
+.tilt-background {
+  position: absolute;
+  background-image: url("./tilt-image-1.jpg");
+  margin-top: -450px;
+  height: 450px;
+  width: 300px;
+  z-index: 1;
+}
+
+.tilt-frame {
+  position: absolute;
+  margin-top: -430px;
+  margin-left: 20px;
+  height: 400px;
+  width: 260px;
+  border: solid 2px white;
+  z-index: 2;
+}
+
+.tilt-content {
+  position: absolute;
+  margin-top: -160px;
+  margin-left: 60px;
+  height: 400px;
+  width: 260px;
+  color: #ffffff;
+  z-index: 1;
+}
+
+.tilt-heading {
+  font-size: 120%;
+  font-weight: 100;
+  color: #ffffff;
+}
+
+#tilt-grid-1:hover ~ .tilt-background {
+  transform: rotateX(10deg) rotateY(-10deg) rotateZ(0deg);
+  transition-duration: 0.5s
+}
+
+#tilt-grid-2:hover ~ .tilt-background {
+  transform: rotateX(10deg) rotateY(0deg) rotateZ(0deg);
+  transition-duration: 0.5s
+}
+
+#tilt-grid-3:hover ~ .tilt-background {
+  transform: rotateX(10deg) rotateY(10deg) rotateZ(0deg);
+  transition-duration: 0.5s
+}
+
+#tilt-grid-4:hover ~ .tilt-background {
+  transform: rotateX(0deg) rotateY(-10deg) rotateZ(0deg);
+  transition-duration: 0.5s
+}
+
+#tilt-grid-5:hover ~ .tilt-background {
+  transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  transition-duration: 0.5s
+}
+
+#tilt-grid-6:hover ~ .tilt-background {
+  transform: rotateX(0deg) rotateY(10deg) rotateZ(0deg);
+  transition-duration: 0.5s;
+}
+
+#tilt-grid-7:hover ~ .tilt-background {
+  transform: rotateX(-10deg) rotateY(-10deg) rotateZ(0deg);
+  transition-duration: 0.5s;
+}
+
+#tilt-grid-8:hover ~ .tilt-background {
+  transform: rotateX(10deg) rotateY(0deg) rotateZ(0deg);
+  transition-duration: 0.5s
+}
+
+#tilt-grid-9:hover ~ .tilt-background {
+  transform: rotateX(-10deg) rotateY(10deg) rotateZ(0deg);
+  transition-duration: 0.5s
+}
+
+#tilt-grid-1:hover ~ .tilt-frame {
+  transform: rotateX(10deg) rotateY(-10deg) rotateZ(0deg) translateX(-10px) translateY(-10px);
+  transition-duration: 0.5s
+}
+
+#tilt-grid-2:hover ~ .tilt-frame {
+  transform: rotateX(10deg) rotateY(0deg) rotateZ(0deg) translateX(0) translateY(-10px);
+  transition-duration: 0.5s
+}
+
+#tilt-grid-3:hover ~ .tilt-frame {
+  transform: rotateX(10deg) rotateY(10deg) rotateZ(0deg) translateX(10px) translateY(-10px);
+  transition-duration: 0.5s
+}
+
+#tilt-grid-4:hover ~ .tilt-frame {
+  transform: rotateX(0deg) rotateY(-10deg) rotateZ(0deg) translateX(-10px);
+  transition-duration: 0.5s
+}
+
+#tilt-grid-5:hover ~ .tilt-frame {
+  transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(0) translateY(0);
+  transition-duration: 0.5s;
+}
+
+#tilt-grid-6:hover ~ .tilt-frame {
+  transform: rotateX(0deg) rotateY(10deg) rotateZ(0deg) translateX(10px) translateY(0);
+  transition-duration: 0.5s;
+}
+
+#tilt-grid-7:hover ~ .tilt-frame {
+  transform: rotateX(-10deg) rotateY(-10deg) rotateZ(0deg) translateX(-10px) translateY(10px);
+  transition-duration: 0.5s;
+}
+
+#tilt-grid-8:hover ~ .tilt-frame {
+  transform: rotateX(10deg) rotateY(0deg) rotateZ(0deg) translateX(0) translateY(10px);
+  transition-duration: 0.5s;
+}
+
+#tilt-grid-9:hover ~ .tilt-frame {
+  transform: rotateX(-10deg) rotateY(10deg) rotateZ(0deg) translateX(10px) translateY(10px);
+  transition-duration: 0.5s;
+}
+
+#tilt-grid-1:hover ~ .tilt-content {
+  transform: rotateX(10deg) rotateY(-10deg) rotateZ(0deg) translateX(-15px) translateY(-15px);
+  transition-duration: 0.5s
+}
+
+#tilt-grid-2:hover ~ .tilt-content {
+  transform: rotateX(10deg) rotateY(0deg) rotateZ(0deg) translateX(0) translateY(-15px);
+  transition-duration: 0.5s
+}
+
+#tilt-grid-3:hover ~ .tilt-content {
+  transform: rotateX(10deg) rotateY(10deg) rotateZ(0deg) translateX(15px) translateY(-15px);
+  transition-duration: 0.5s
+}
+
+#tilt-grid-4:hover ~ .tilt-content {
+  transform: rotateX(0deg) rotateY(-10deg) rotateZ(0deg) translateX(-15px);
+  transition-duration: 0.5s
+}
+
+#tilt-grid-5:hover ~ .tilt-content {
+  transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(0) translateY(0);
+  transition-duration: 0.5s;
+}
+
+#tilt-grid-6:hover ~ .tilt-content {
+  transform: rotateX(0deg) rotateY(10deg) rotateZ(0deg) translateX(15px) translateY(0);
+  transition-duration: 0.5s;
+}
+
+#tilt-grid-7:hover ~ .tilt-content {
+  transform: rotateX(-10deg) rotateY(-10deg) rotateZ(0deg) translateX(-15px) translateY(15px);
+  transition-duration: 0.5s;
+}
+
+#tilt-grid-8:hover ~ .tilt-content {
+  transform: rotateX(10deg) rotateY(0deg) rotateZ(0deg) translateX(0) translateY(15px);
+  transition-duration: 0.5s;
+}
+
+#tilt-grid-9:hover ~ .tilt-content {
+  transform: rotateX(-10deg) rotateY(10deg) rotateZ(0deg) translateX(15px) translateY(15px);
+  transition-duration: 0.5s;
+}
